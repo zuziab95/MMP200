@@ -1,0 +1,353 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	min-width: 870px;
+}
+
+.content {
+	padding: 3%;
+}
+
+
+.column1 {
+	float: left;
+	width: 10%;
+	padding: 10px;
+	
+}
+
+.column2 {
+	float: left;
+	width: 70%;
+	padding: 10px;
+	
+}
+
+.column3 {
+	float: right;
+	width: 10%;
+	padding: 10px;
+	
+}
+
+.column2 img{
+	display: block;
+	margin-left: 19%;
+}
+
+.column1 img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.column3 img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover{
+	color: white;
+	background-color: #9f2158 ;
+	
+}
+
+
+
+nav{
+	clear: both;
+	margin: auto;
+	text-align: center;
+	font-size: 100%;
+	margin-bottom: 10px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline;
+}
+
+nav a {
+	display: inline-block;
+	padding: 20px;
+}
+
+span {
+	color: pink;
+	font-size: 200%;
+}
+
+nav {
+	margin-top: 15%;
+	}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+	padding: 5%;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 180%;
+  padding: 8px 12px;
+  position: absolute;
+  left: -3%;
+  bottom: 20%;
+  width: 50%;
+  text-align: left;
+  background-color: pink;
+  box-shadow: 5px 10px #f7d2e6;
+}
+
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade; 
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+.pop {
+	float: left;
+	width: 33.33%;
+	padding: 50px;
+	background-color: #efefef;
+}
+
+.pop p{
+	height: 5vh;
+}
+
+.pop a:hover{
+	color: #9f2158;
+}
+
+.mostpopular {
+	background-color: #9f2158;
+	color: white;
+	font-size: 130%;
+	padding: 1px;
+	display: block;
+	margin: auto;
+	width: 40%;
+	text-align: center;
+}
+
+
+
+
+.row:after {
+	display: block;
+	clear: both;
+}
+
+
+
+.latestnews {
+	width: 100%;
+	display: block;
+	float: left;
+	font-size: 250%;
+	text-align: center;
+	padding: 7%;
+	margin-top: -5%;
+}
+
+.hashtag{
+	font-size: 70%;
+	margin-bottom: -10px;
+	font-weight: 400;
+}
+
+.article {
+	margin-top: -115px;
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 50px;
+	font-size: 120%;
+}
+
+.article p{
+	margin-left: 10%;
+	margin-top: 3%;
+}
+
+.article img {
+	float: left;
+	padding: 2%;
+}
+
+.byline{
+	font-size: 80%;
+	font-weight: 400;
+	color: #9f2158;
+}
+
+.byline p{
+	margin-top: -1%; 
+}
+
+.byline span{
+	color: #9f2158;
+	font-size: 100%;
+	font-weight: 800;
+}
+
+
+.ad img {
+	display: block;
+	margin: auto;
+	align-self: center;
+	margin-bottom: 115px;
+}
+
+footer {
+	display: block;
+	float: left;
+	font-size: 60%;
+	background-color: #efefef;
+	background-size: 5%;
+	font-weight: 400;
+	padding: 5px;
+}
+
+
+.fashion {
+	font-size: 200%;
+	margin-top: -5%;
+	margin-left: 3%;
+}
+
+.article2 {
+	display: block;
+	float: left;
+	width: 50%;
+	padding: 50px;
+	text-align: center;
+	border-top: solid pink 2px;
+}
+
+.article2 p{
+	text-align: left;
+	font-size: 150%;
+	padding: 2px;
+}
+
+.article2 img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 10px 10px black;
+}
+
+.row2{
+	padding: 0px;
+}
+
+.hashtagfashion{
+	font-size: 70%;
+	font-weight: 400;
+}
+
+.chanel{
+	display: block;
+	float: left;
+	margin: auto;
+	border-top: pink solid 2px;
+	width: 100%;
+}
+
+.articlepage p{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	line-height: 4vh;
+	word-spacing: 1vw;
+}
+
+h5{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 130%;
+}
+
+.articlepage{
+	padding: 5%;
+	margin-top: -7vh;
+}
+
+.articlepage h1, .articlepage h2, .articlepage h3 {
+	text-align: center;
+}
+
+h2{
+	font-size: 110%;
+	font-weight: 400;
+}
+
+h1{
+	font-weight: 700;
+}
+
+h3 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+.socialmedia img{
+	display: block;
+	margin: auto;
+	margin-top: -2vh;
+}
+
+.articlead img{
+	display: block;
+	margin: auto;
+	padding: 3%;
+}
+
+

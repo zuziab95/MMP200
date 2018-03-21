@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PAPER</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+</head>
+<body>
+
+	<div class="content">
+
+
+		<div class="column1">
+			<img  src="search.png" width="70%" height="auto">
+		</div>
+
+		<div class="column2">
+			<a href="index.html">
+			<img  src="logopaper.gif" width="80%" height="auto">
+			</a>
+		</div>
+
+		<div class="column3">
+			<img  src="social.png" width="60%" height="auto">
+		</div>
+
+	
+		<nav>
+			<ul>
+				<li><a href="fashion.html">Fashion </a></li><span>|</span>
+				<li><a href="index.html">Beautiful People </a></li><span>|</span>
+				<li><a href="index.html"> Entertainment</a></li><span>|</span>
+				<li><a href="index.html">Break the Internet</a></li>
+
+			</ul>
+		</nav>
+
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <a href="index.html">
+			  <img src="pic5.jpg" style="width:100%">
+			  <div class="text">Hayley Law Is Hollywood's Unlikely Action Hero</div>
+			  </a>
+			</div>
+
+			<div class="mySlides fade">
+			  <img src="pic2.jpg" style="width:100%">
+			  <div class="text">Zara Larsson's Modern Day Love Story</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <img src="pic4.jpg" style="width:100%">
+			  <div class="text">RuCap: Trixie Mattel On What Her 'All Stars' Win Means for the Future of Drag</div>
+			</div>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			</div>
+		 </div>
+
+		 <div class="mostpopular">
+		 	<p>MOST POPULAR</p>
+		 </div>
+
+			 	<div class="row">
+					<div class="pop">
+					  <img src="pop1.jpg" width="100%" height="auto">
+					  <p>Cuban Doll Is Dallas' Breakout Rap Star</p>
+					</div>
+
+
+					<div class="pop">
+						<img src="pop2.jpg" width="100%" height="auto">
+						<p>Riley Reid Is America's Secret Star</p>
+					</div>
+
+					<div class="pop">
+						<a href="bowie.html"><img src="pop3.jpg" width="100%" height="auto">
+						<p>The Most Revealing Personal Objects From the David Bowie Exhibition</p></a>
+					</div>
+				</div>
+
+				<div class="zara">
+					<a href="https://www.zara.com/us/">
+					<img src="zara.jpg" width="100%" height="auto">
+					</a>
+				</div>
+
+
+		<div class="latestnews">
+			<p>Latest news</p>	
+		</div>	
+			<div class="article">
+				<img src="britney.jpg" width="40%" height="auto">
+				<div class="hashtag">
+					<p>#FamousPeople</p>
+				</div>
+				<p>Britney Spears, the One and Only, Is the Face of a New Kenzo Campaign</p>
+				<div class="byline">
+					<p>by <span>Claire Valentine</span></p>
+				</div>
+			</div>	
+	
+			<div class="article">
+				<img src="male.jpg" width="40%" height="auto">
+				<div class="hashtag">
+					<p>#Sex&Dating</p>
+				</div>
+				<p>Male Birth Control Pills are Slowly Coming</p>
+				<div class="byline">
+					<p>by <span>Meagan Fredette</span></p>
+				</div>
+			</div>	
+
+			<div class="ad">
+			<img src="ad2.jpg">
+			</div>
+
+			<div class="article">
+				<img src="stranger.jpg" width="40%" height="auto">
+				<div class="hashtag">
+					<p>#Film/TV</p>
+				</div>
+				<p>'Stranger Things' Gives Raises to the Entire Cast</p>
+				<div class="byline">
+					<p>by <span>Tia Long</span></p>
+				</div>
+			</div>	
+
+			<div class="article">
+				<img src="mybody.jpg" width="40%" height="auto">
+				<div class="hashtag">
+					<p>#Care</p>
+				</div>
+				<p>Mississippi Just Signed the Strictest Anti-Abortion Law in the United States</p>
+				<div class="byline">
+					<p>by <span>Meagan Fredette</span></p>
+				</div>
+			</div>	
+
+
+			<footer>
+				<p>2017 Paper Publishing Company. All rights reserved. All materials contained in PAPERMAG are the copyrighted property of Paper Publishing Company or its licensers. PAPER and PAPERMAG are trademarks of Paper Publishing Company and all titles, characters, names and graphics used in connection with PAPERMAG are trademarks of Paper Publishing Company.</p>
+			</footer>
+
+		 	
+	 </div>
+
+
+
+
+
+
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); 
+}
+</script>
+
+</body>
+</html>
