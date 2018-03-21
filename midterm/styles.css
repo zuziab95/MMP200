@@ -305,8 +305,8 @@ footer {
 .articlepage p{
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	line-height: 4vw;
-	word-spacing: 1vw;
+	line-height: 150%;
+	word-spacing: 150%;
 }
 
 h5{
