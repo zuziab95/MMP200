@@ -31,6 +31,7 @@ body {
  
 .logo {
       font-family: raleway-bold, open sans;
+      padding: 10px;
       line-height: 60px;
       position: fixed;
       float: left;
