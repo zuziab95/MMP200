@@ -107,7 +107,7 @@ nav ul li a {
       margin-left: 3vw;
 }
  
-@media(max-width: 600px) {
+@media(max-width: 550px) {
  
       .logo {
             position: fixed;
