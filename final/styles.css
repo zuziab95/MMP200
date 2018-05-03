@@ -250,7 +250,7 @@ input[type=submit]:hover {
 .color {
       float: left;
       width: 20%;
-      padding: 15px;
+      padding: 10px;
       border-bottom: solid #babdc1 1.5px;
 }
 
