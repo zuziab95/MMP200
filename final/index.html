@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>The Canine Line</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Gaegu:300,400,700" rel="stylesheet">
+      <style>
+            header {
+      width: 100%;
+      height: 90vh;
+      background: url(canine.jpg) no-repeat 50% 50%;
+      background-size: cover;
+      background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+            h4{
+                  font-weight: 300;
+                  font-size: 160%;
+                  margin-top: -5vh;
+                  text-align: center;
+
+            }
+
+
+            h5{
+                  font-weight: 300;
+                  font-size: 160%;
+                  margin-top: 5vh;
+                  text-align: center;
+
+            }
+            img{display: block;
+                  margin: auto;
+            }
+
+            h3{
+                  text-align: center;
+            }
+
+            footer{
+                  margin-top: 200px;
+            }
+
+      </style>
+</head>
+<body>
+      <div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                              LOGO
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="#">SHOP</a></li>
+                                    <li><a href="contact.html">CONTACT</a></li>
+                                    <li><a href="FAQ.html">FAQ</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+
+                  <div class="grid-container">
+                        <div class="item1">Your best friend still needs a buddy!</div>
+                        <div class="item2">SHOP BUDDYBED</div>
+                  </div>
+
+            </header>
+
+            <div class="content">
+                  
+                  <h4>INTRODUCING</h4>
+                  <img src="buddy-bed-text-logo.png" width="80%">
+                  <img src="home-deluxe-beds.jpg" width="100%">
+                  <h5>The pinnacle of comfort and durability.
+Made affordable.</h5>
+
+            </div>
+
+
+
+            <div class="container">
+            <img src="sleeping.jpg" width="100%" style=" border-top: solid black 6px; border-bottom: solid black 6px;"" >
+            <div class="text1">Our dogs sleep up to 18 hours a day.</div> 
+            <div class="text2">Let's make sure they are comfy.</div>
+            </div>
+
+<h5>DESIGNED FOR THE MODERN HUMAN & THE FURRY BUDDY IN THEIR LIFE.</h5>
+
+<div class="paws">
+            <div id="carousel">
+
+
+<img src="paw1.png" width="30%" id="item-1" />
+<img src="paw2.png" width="30%" id="item-2" />
+<img src="paw3.png" width="30%" id="item-3" />
+
+</div>
+</div>
+
+<footer>
+
+                        <div class="logo-footer">
+                              <img src="logo-footer.png">
+                        </div>
+                        <div class="copyright">Copyright 2014  © The Canine Line</div>
+                  
+                   </footer>
+
+
+
+
+
+            <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
+
+   <script type="text/javascript">
+$(document).ready(function () {
+
+  var carousel = $("#carousel").waterwheelCarousel({
+
+    flankingItems: 3,
+
+  });
+
+ 
+
+  $('#prev').bind('click', function () {
+
+    carousel.prev();
+
+    return false
+
+  });
+
+ 
+
+  $('#next').bind('click', function () {
+
+    carousel.next();
+
+    return false;
+
+  });
+
+});
+
+   </script>
+
+      
+
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('red');
+            }
+
+            else {
+                  $('nav').removeClass('red');
+            }
+      })
+
+
+      </script>
+
+</body>
+</html>

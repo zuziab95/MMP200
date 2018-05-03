@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>The Canine Line</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Gaegu:300,400,700" rel="stylesheet">
+
+<style>
+      body{
+            background-image: url(paws.jpg);
+            background-attachment: fixed;
+      }
+
+      .grid-container{
+            padding: 30px;
+      }
+
+
+</style>
+
+</head>
+<body>
+
+
+      <div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                              LOGO
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="#">SHOP</a></li>
+                                    <li><a href="contact.html">CONTACT</a></li>
+                                    <li><a href="FAQ.html">FAQ</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+
+</header>
+
+      <div class="grid-container">
+                        <div class="item3">Contact Us</div>
+                        <div class="item4">Questions? Comments? Please fill out our contact form or email us at help@thecanineline.com and we'll get right back to you!</div>
+                  </div>
+
+
+      <div class="containercontact">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+     <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your adress e-mail...">
+
+    <label for="phone">Phone</label>
+    <input type="text" id="phone" name="phone" placeholder="Your phone number...">
+
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="How can we help you?" style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+                   <footer>
+
+                        <div class="logo-footer">
+                              <img src="logo-footer.png">
+                        </div>
+                        <div class="copyright">Copyright 2014  © The Canine Line</div>
+                  
+                   </footer>
+            
+          
+          
+
+
+
+
+
+       <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('red');
+            }
+
+            else {
+                  $('nav').removeClass('red');
+            }
+      })
+
+
+      </script>
+
+</body>
+</html>
