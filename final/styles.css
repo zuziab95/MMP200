@@ -3,6 +3,11 @@ html, body {
       padding: 0;
       width: 100%;
 }
+
+@font-face {
+  font-family: "AbrilFatface-Regular";
+  src: url("AbrilFatface-Regular.otf");
+  }
  
 body {
       font-family: 'Open Sans', sans-serif;
