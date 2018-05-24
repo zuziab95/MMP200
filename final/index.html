@@ -19,26 +19,26 @@
   
 }
             
-            footer{
-                  float: left;
-            }
-            
+            @media(max-width: 600px){
+              .pawsdeskop {
+                display: none;
+              }
+
+
              .paws{
                   float: left;
             }
-
+           
             h4{
                   font-weight: 300;
                   font-size: 160%;
                   text-align: center;
-
             }
-
-
             h5{
                   font-weight: 300;
                   font-size: 160%;
                   margin-top: 2vh;
+                  margin-bottom: 1vh;
                   text-align: center;
                   padding-left: 20px;
                   padding-right: 20px;
@@ -46,77 +46,165 @@
             img{display: block;
                   margin: auto;
             }
-
             h3{
                   text-align: center;
             }
+ }
+      
+
+
+
+
+
+
+
+ @media(min-width: 600px){
+
+            .paws2 {
+              width: 25%;
+              float: left;
+              padding: 25px;
+
+            }
+
+            .pawsdeskop {
+              border-bottom: solid 1px grey;
+            
+            }
+
+             .paws{
+              display: none;
+                  float: left;
+            }
+           
+            h4{
+                  font-weight: 300;
+                  font-size: 160%;
+                  text-align: center;
+            }
+            h5{
+                  font-weight: 300;
+                  font-size: 200%;
+                  margin-top: 7vh;
+                  margin-bottom: 1vh;
+                  text-align: center;
+                  padding-left: 20px;
+                  padding-right: 20px;
+            }
+            img{display: block;
+                  margin: auto;
+            }
+            h3{
+                  text-align: center;
+            }
+
+            .border {
+              border-top: solid grey 1px;
+            }
+
+            .shopnow:hover {
+              font-size: 150%;
+                transition:all 0.3s ease;
+            }
+
+
+ }
 
       </style>
 </head>
 <body>
       <div class="wrapper">
-            <header>
 
-                  <nav>
+      <nav>
 
                         <div class="menu-icon">
                               <i class="fa fa-bars fa-2x"></i>
                         </div>
 
+                        <a href="index.html">
                         <div class="logo">
                               THE CANINE LINE
                         </div>
+                        </a>  
 
                         <div class="menu">
                               <ul>
-                                    <li><a href="#">SHOP</a></li>
-                                    <li><a href="contact.html">CONTACT</a></li>
-                                    <li><a href="FAQ.html">FAQ</a></li>
+                                    <li><a class="menu" href="shop.html">SHOP</a></li>
+                                    <li><a class="menu" href="contact.html">CONTACT</a></li>
+                                    <li><a class="menu" href="FAQ.html">FAQ</a></li>
                               </ul>
                         </div>
                   </nav>
+            <header>
+
+                  
 
                   <div class="grid-container">
                         <div class="item1">Your best friend still needs a buddy!</div>
-                        <div class="item2">SHOP BUDDYBED</div>
+                        <div class="item2"><a href="shop.html" style="text-decoration: none; color: white;"> SHOP BUDDYBED </a></div>
                   </div>
 
             </header>
+
+            <div class="all">
 
             <div class="content">
                   
                   <h4>INTRODUCING</h4>
                   <img src="buddy-bed-text-logo.png" width="80%">
                   <img src="home-deluxe-beds.jpg" width="100%">
-                  <h5>The pinnacle of comfort and durability.
+                  <h5 style="line-height: 40px;">The pinnacle of comfort and durability.
 Made affordable.</h5>
+                  <img src="home-standard-beds.jpg" width="100%">
 
             </div>
 
-
-
+</div>
+           
             <div class="container">
-            <img src="sleeping.jpg" width="100%" style=" border-top: solid black 6px; border-bottom: solid black 6px;"" >
+            <img src="sleeping.jpg" width="100%" style=" border-top: solid #740b1d 10px; border-bottom: solid #740b1d 10px;" >
             <div class="text1">Our dogs sleep up to 18 hours a day.</div> 
             <div class="text2">Let's make sure they are comfy.</div>
+            <div class="text3"><a href="shop.html" style="text-decoration: none; color: white;">SHOP BUDDYBED</a></div>
             </div>
+         <div class="all"> 
 
 <h5>DESIGNED FOR THE MODERN HUMAN & THE FURRY BUDDY IN THEIR LIFE.</h5>
 
+<div class="pawsdeskop">
+<img class="paws2" src="paw1.png" width="100%" >
+<img class="paws2" src="paw2.png" width="100%" >
+<img class="paws2" src="paw3.png" width="100%">
+
+  
+</div>
+
 <div class="paws">
             <div id="carousel">
-
-
+              
 <img src="paw1.png" width="40%" id="item-1" />
 <img src="paw2.png" width="40%" id="item-2" />
 <img src="paw3.png" width="40%" id="item-3" />
+</div>
+</div>
+
+<img class="border" src="buddy-bed-text-logo.png" width="100%">
+<img src="bottomdog.png" width="100%">
 
 </div>
+
+
+<div class="promo">
+<p>FOR A LIMITED TIME ONLY <br>
+<span class="twentyoff">  25% OFF </span> <br>
+<span class="shopnow"><a href="shop.html" style="text-decoration: none; color:#740b1d;"> SHOP NOW </span> </a> </p>
 </div>
-                                           
+
+
+
+                                       
                                          
-<footer>
-
+                    <footer>
                         <div class="logo-footer">
                               <img src="logo-footer.png">
                         </div>
@@ -124,72 +212,43 @@ Made affordable.</h5>
                   
                    </footer>
 
-
-
-
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
-
 <script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
-
    <script type="text/javascript">
 $(document).ready(function () {
-
   var carousel = $("#carousel").waterwheelCarousel({
-
     flankingItems: 3,
-
   });
-
  
-
   $('#prev').bind('click', function () {
-
     carousel.prev();
-
     return false
-
   });
-
  
-
   $('#next').bind('click', function () {
-
     carousel.next();
-
     return false;
-
   });
-
 });
-
    </script>
             
       
-
       <script type="text/javascript">
-
       // Menu-toggle button
-
       $(document).ready(function() {
             $(".menu-icon").on("click", function() {
                   $("nav ul").toggleClass("showing");
             });
       });
-
       // Scrolling Effect
-
       $(window).on("scroll", function() {
             if($(window).scrollTop()) {
                   $('nav').addClass('red');
             }
-
             else {
                   $('nav').removeClass('red');
             }
       })
-
-
       </script>
-
 </body>
 </html>

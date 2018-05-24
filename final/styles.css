@@ -9,17 +9,25 @@ html, body {
   src: url("AbrilFatface-Regular.otf");
   }
 
-@font-face {
+@font-face{
   font-family: "raleway-bold";
   src: url("raleway-bold.ttf");
-  }
+}
+
  
 body {
       font-family: 'Open Sans', sans-serif;
       
 }
- 
 
+
+
+
+ 
+ .logo a{ 
+  text-decoration: none; 
+color: white;
+ }
 
  
 .content {
@@ -29,22 +37,13 @@ body {
       text-align: justify;
 }
  
-.logo {
-      font-family: raleway-bold, open sans;
-      line-height: 60px;
-      position: fixed;
-      float: left;
-      margin: 16px 46px;
-      color: #fff;
-      font-weight: 800;
-      font-size: 20px;
-      letter-spacing: 2px;
-}
+
  
 nav {
       position: fixed;
       width: 100%;
       line-height: 60px;
+      z-index: 999999;
 }
  
 nav ul {
@@ -61,7 +60,7 @@ nav ul {
       font-weight: 300;
 }
 
-nav a:hover {
+nav .menu a:hover {
       text-shadow: 2px 2px 4px #000000;
       font-size: 210%;
       transition:all 0.3s ease;
@@ -72,6 +71,10 @@ nav.red ul {
 }
 
 nav.red a {
+      color: #fff;
+}
+
+nav.red .logo {
       color: #fff;
 }
  
@@ -117,9 +120,22 @@ nav ul li a {
 .item1, .item2 {
       /*margin-left: 3vw;*/
 }
+
+
  
 @media(max-width: 600px) {
 
+.logo {
+      font-family:  open sans;
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      color: white;
+      font-weight: 800;
+      font-size: 150%;
+      letter-spacing: 2px;
+}
   
  
       .logo {
@@ -184,7 +200,8 @@ nav ul li a {
 
 .item3{
       margin-top: 12vh;
-      font-family: AbrilFatface-Regular, open-sans;
+      font-family: raleway-bold, open sans;
+      font-weight: bolder;
       font-size: 250%;
       text-align: center;
 }
@@ -197,7 +214,8 @@ nav ul li a {
 
 .item5{
       margin-top: 15vh;
-      font-family: AbrilFatface-Regular, open-sans;
+      font-family: raleway-bold, open sans;
+      font-weight: bolder;
       font-size: 250%;
       text-align: center;
 }
@@ -249,12 +267,13 @@ input[type=submit]:hover {
 
 .color {
       float: left;
-      width: 20%;
+      width: 26%;
       padding: 10px;
       border-bottom: solid #babdc1 1.5px;
 }
 
 .color p{
+  text-align: center;
       height: 5vh;
 }
 
@@ -279,7 +298,7 @@ span{
 }
 
 .container {
-      margin-top: -3vh;
+   margin-top: 15px;
     position: relative;
     text-align: center;
     color: #665644;
@@ -287,27 +306,90 @@ span{
     font-size: 100%;
 }
 
+
 .text1{
      position: absolute;
-    top: 20px;
-    right: 16%;
-    font-weight: 600;
+     left: 12%;
+    top: 12%;
+    right: 12%;
+   
+    color: #740b1d;
+
 }
 
 .text2{
       position: absolute;
-    top: 45px;
-    right: 20%;
+      left: 15%;
+    top: 18%;
+    right: 15%;
     font-weight: 600;
+    color: #740b1d;
 }
+
+.text3{
+   position: absolute;
+    top: 80%;
+    right: 32%;
+    font-weight: 600;
+    background-color: #740b1d;
+    padding: 5px;
+      width: 40%;
+      font-size: 100%;
+      text-align: center;
+      color: white;
+      font-weight: 300;
+      border-radius: 50px;
+}
+
+
 
 .paws{
-      width: 60%;
+      width: 65%;
+      height: 23em;
+      margin-top: -13vh;
       }
-
+.shopnow{
+  background: white;
+  color: #740b1d;
+  font-size: 120%;
+  border-radius: 50px;
+  padding: 4px;
 
 }
 
+.promo {
+  background: #740b1d;
+  width: 100%;
+    color: white;
+  font-family: AbrilFatface-Regular, open-sans;
+  text-align: center;
+  border: solid black 1px;
+}
+
+.twentyoff {
+  font-size: 200%;
+}
+
+.price {
+  text-align: center;
+  padding: 15px;
+}
+.expensive {
+  font-size: 170%;
+  color: grey;
+  text-decoration: line-through;
+  font-family: AbrilFatface-Regular, open-sans;
+}
+
+.cheap{
+  font-size: 170%;
+  color: red;
+  font-family: AbrilFatface-Regular, open-sans;
+}
+
+}
+
+.bottompart {background: pink;}
 
 
 .item5{grid-area: FAQ;}
@@ -350,7 +432,7 @@ span{
   padding: 10px;
 } 
 
-.item2:hover{
+.item2:hover, .text3:hover, .shopbed1:hover, .shopbed2:hover  {
              -webkit-animation: swing 1s ease;
         animation: swing 1s ease;
         -webkit-animation-iteration-count: 1;
@@ -436,10 +518,12 @@ span{
 .copyright{
       display: inline;
       float: right;
+      font-size: 80%;
 }
 
 footer{
       padding: 7px;
+
 }
 
 
@@ -455,6 +539,396 @@ footer{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 600px){
+
+      .item1 {
+       margin: auto;
+        width: 50%;
+      margin-top: 15vh;
+      font-size: 350%;
+      text-align: center; 
+       
+       letter-spacing: 1px;
+       font-family: AbrilFatface-Regular, open-sans;
+   
+
+}
+
+
+.all {
+  max-width: 1000px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.logo {
+      font-family:  open sans;
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      color: #740b1d;
+      font-weight: 800;
+      font-size: 200%;
+      letter-spacing: 2px;
+}
+
+.item2 {
+  display: block;
+  margin: auto;
+      margin-top: 2vh;
+      background-color: #740b1d;
+      width: 25%;
+      font-size: 130%;
+      text-align: center;
+      color: white;
+      font-weight: 300;
+      border-radius: 50px;
+     
+}
+
+.item3{
+      margin-top: 12vh;
+      font-family: raleway-bold, open sans;
+      font-weight: bolder;
+      font-size: 250%;
+      text-align: center;
+}
+
+.item4{
+      margin-top: 25vh;
+      font-size: 130%;
+      text-align: center;
+}
+
+.item5{
+      margin-top: 15vh;
+      font-family: raleway-bold, open sans;
+      font-weight: bolder;
+      font-size: 250%;
+      text-align: center;
+
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #740b1d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    font-size: 80%;
+}
+
+.containercontact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.FAQ-container {
+      margin-left: 10%;
+      margin-right: 10%;
+}
+
+.FAQ-container2{
+      background-color: #000;
+}
+
+.small, .medium, .large {
+      display: block;
+      margin-left: 25%;
+}
+
+.color {
+      float: left;
+      width: 26%;
+      padding: 10px;
+      border-bottom: solid #babdc1 1.5px;
+}
+
+.color p{
+  text-align: center;
+      height: 5vh;
+}
+
+.color:after {
+      display: block;
+      clear: both;
+}
+
+
+h2{
+      border-top: solid #babdc1 1.5px;
+      padding-top: 35px;
+}
+
+.cost {
+      border-top: none;
+      margin-top: 225px;
+}
+
+span{
+      font-weight: 800;
+}
+
+.container {
+   margin-top: 15px;
+    position: relative;
+    text-align: center;
+    color: #665644;
+    font-weight: 300;
+    font-size: 100%;
+}
+
+
+.text1{
+  font-size: 250%;
+     position: absolute;
+     left: 12%;
+    top: 12%;
+    right: 12%;
+    
+    color: #740b1d;
+
+}
+
+.text2{
+  font-size: 250%;
+      position: absolute;
+      left: 15%;
+    top: 18%;
+    right: 15%;
+    font-weight: 600;
+    color: #740b1d;
+}
+
+.text3{
+  font-size: 250%;
+   position: absolute;
+    top: 83%;
+    right: 30%;
+    background-color: #740b1d;
+    padding: 5px;
+      width: 40%;
+      text-align: center;
+      color: white;
+      font-weight: 300;
+      border-radius: 50px;
+}
+
+.paws img {
+  width: 20%;
+}
+
+.paws{
+      width: 100%;
+      height: 40em;
+      margin-top: -20vh;
+      }
+.shopnow{
+  background: white;
+  color: #740b1d;
+  font-size: 120%;
+  border-radius: 50px;
+  padding: 4px;
+
+}
+
+.promo {
+  background: #740b1d;
+  width: 100%;
+    color: white;
+  font-family: AbrilFatface-Regular, open-sans;
+  text-align: center;
+  border: solid black 1px;
+}
+
+.twentyoff {
+  font-size: 200%;
+}
+
+.price {
+  text-align: center;
+  padding: 15px;
+}
+.expensive {
+  font-size: 170%;
+  color: grey;
+  text-decoration: line-through;
+  font-family: AbrilFatface-Regular, open-sans;
+}
+
+.cheap{
+  font-size: 170%;
+  color: red;
+  font-family: AbrilFatface-Regular, open-sans;
+}
+
+}
+
+.bottompart {background: pink;}
+
+
+.item5{grid-area: FAQ;}
+
+.grid-container{
+      display: grid;
+      grid-template-areas: 'FAQ FAQ FAQ FAQ FAQ FAQ';
+
+      }
+
+      .grid-container > div {
+  padding: 10px;
+} 
+
+
+.item3 {grid-area: contact;}
+.item4 {grid-area: question;}
+
+.grid-container{
+      display: grid;
+      grid-template-areas: 'contact contact contact contact contact contact'
+                              'question question question question question question';
+}
+
+
+
+
+
+.grid-container > div {
+  padding: 10px;
+} 
+
+
+
+
+
+.item1 {grid-area: header;}
+.item2 {grid-area: main;}
+
+.grid-container {
+      display: grid;
+      grid-template-areas: 
+                              ' header header header header header header'
+                            ' main main main main main main'  ;
+
+                             }
+
+     .grid-container > div {
+  padding: 10px;
+} 
+
+.item2:hover, .text3:hover, .shopbed1:hover, .shopbed2:hover {
+             -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        transition:all 0.3s ease;
+}
+
+button:hover {
+  font-size: 180%;
+    transition:all 0.3s ease;
+}
+
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+
+
+
+}
 
 
 

@@ -12,6 +12,8 @@
       <link href="https://fonts.googleapis.com/css?family=Gaegu:300,400,700" rel="stylesheet">
 
 <style>
+
+ @media(max-width: 600px){
       body{
             background-image: url(paws.jpg);
             background-attachment: fixed;
@@ -21,40 +23,76 @@
             padding: 18px;
       }
 
+      .break {
+            display: none;
+      }
+
+}
+
+       @media(min-width: 600px){
+
+ body{
+            background-image: url(paws.jpg);
+            background-attachment: fixed;
+      }
+
+      .grid-container{
+            padding: 18px;
+      }
+
+      .allFAQ {
+            margin-right: 20%;
+            margin-left: 20%;
+      }
+
+      .item1{
+            width: 70%;
+      }
+
+
+       }
+
 
 </style>
 
 </head>
 <body>
 
-
-      <div class="wrapper">
-            <header>
-
-                  <nav>
+ <nav>
 
                         <div class="menu-icon">
                               <i class="fa fa-bars fa-2x"></i>
                         </div>
 
+                        <a href="index.html">
                         <div class="logo">
-                              LOGO
+                              THE CANINE LINE
                         </div>
+                        </a>  
 
                         <div class="menu">
                               <ul>
-                                    <li><a href="#">SHOP</a></li>
+                                    <li><a href="shop.html">SHOP</a></li>
                                     <li><a href="contact.html">CONTACT</a></li>
-                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="FAQ.html">FAQ</a></li>
                               </ul>
                         </div>
                   </nav>
+      <div class="wrapper">
+            <header>
+
+                 
 
 </header>
 
-
+<div class="allFAQ">
       <div class="grid-container">
-                        <div class="item5">Frequently Asked Questions</div>
+                        <div class="item1" style=" margin-top: 15vh;
+      font-family: raleway-bold, open sans;
+      font-weight: bolder;
+      font-size: 250%;
+      text-align: center;
+      ">Frequently Asked <br> Questions</div>
                         </div>
 
                         <img src="doggies.png" width="100%">
@@ -89,31 +127,34 @@
 
                         <div class="row">
                               <div class="color">
-                                <img src="brown.png" width="90%" height="auto">
+                                <img src="brown.png" width="100%" height="auto">
                                 <p>Bailey Brown</p>
                                 </a>
                               </div>
 
 
                               <div class="color">
-                                    <img src="red.png" width="90%" height="auto">
+                                    <img src="red.png" width="100%" height="auto">
                                     <p>Shadow Red</p>
                                     </a>
                               </div>
 
                               <div class="color">
-                                    <img src="grey.png" width="90%" height="auto">
+                                    <img src="grey.png" width="100%" height="auto">
                                     <p>Hunter Grey</p></a>
                               </div>
                         </div>
+
+
+                        <br class="break">
 
 
                         <h2 class="cost">How much does the BuddyBed cost?</h2>
 
                         <p><span>BuddyBeds</span> are available in three sizes, for both our regular and deluxe versions. Prices are broken down below:</p>
 
-<p><span>Regular Version: </span> Small $99.00 <span>|</span> Medium $109.00 <span>|</span> Large $119.00</p>
-<p><span>Deluxe:</span> Small $109.00 <span>|</span> Medium $119.00 <span>|</span> Large $129.00</p>
+<p><span>Regular Version: </span> Small $90.00 <span>|</span> Medium $100.00 <span>|</span> Large $110.00</p>
+<p><span>Deluxe:</span> Small $95.00 <span>|</span> Medium $105.00 <span>|</span> Large $115.00</p>
 
 
             <h2>How long will it take to receive my bed?</h2>
@@ -146,12 +187,13 @@ Please allow 1 to 2 business days to process BuddyBed orders.</p>
 <a style="text-decoration: underline;color: black;" href="contact.html"><h2>Questions? Comments? Please fill out our contact form or email us at help@thecanineline.com and we’ll get right back to you!</h2></a>
 
                   </div>
-
+</div>
                    
 
-                  
+               </div>
 
 
+</div>
 
 
 
